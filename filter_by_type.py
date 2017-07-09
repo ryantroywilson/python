@@ -20,34 +20,20 @@ spL = ['name','address','phone number','social security number']
 
 # set one of the above variables as the current one I'm testing
 current_tester = lL
-
 curr_type = type(current_tester)
-# INTERGERS !!
-"""
-If the integer is greater than or equal to 100, print "That's a big number!"
-If the integer is less than 100, print "That's a small number"
-"""
+
 if curr_type is int:
     if current_tester >= 100:
         print "That's a big number!"
     else:
         print "That's a small number!"
 
-# STRINGS !!!
-"""
-If the string is greater than or equal to 50 characters print "Long sentence."
-If the string is shorter than 50 characters print "Short sentence."
-"""
 elif curr_type is str:
     if len(current_tester) >= 50:
         print "Long sentence."
     else:
         print "Short sentence."
-# LISTS !!!!
-"""
-If the length of the list is greater than or equal to 10 print "Big list!"
-If the list has fewer than 10 values print "Short list."
-"""
+
 elif isinstance(current_tester, list):
     if len(current_tester) >= 10:
         print "Big list!"
