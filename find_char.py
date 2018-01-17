@@ -1,32 +1,17 @@
-"""
-Write a program that takes a list of strings and a string containing a single character, and prints a new list 
-of all the strings containing that character.
+'''
+Write a program that takes a list of strings and a string containing a single character, and prints a new list of all the strings containing that character.
+'''
 
-Here's an example:
-
-# input
-word_list = ['hello','world','my','name','is','Anna']
+word_list = ['hello','world', 'my','name','is','Ryan']
 char = 'o'
-# output
-new_list = ['hello','world']
-Copy
-Hint: how many loops will you need to complete this task?
-"""
 
-word_list = ['hello','world','my','name','is','Anna']
-char = 'o'
-new_list = []
+def find_character(word_list, char):
+    new_list = []
+    for i in range(0,len(word_list)):
+        if word_list[i].find(char) != -1:
+            new_list.append(word_list[i])
 
-for i in word_list:
-    for character in char:
-        if character in i:
-        	new_list.append(i)
-        	break
-print new_list
+    print new_list
 
- 	
-
-            
-
-
-
+test_list = ['hello','world', 'my','name','is','Ryan']
+find_character(test_list, 'o')
